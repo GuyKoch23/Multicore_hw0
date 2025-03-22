@@ -97,8 +97,8 @@ int main(int argc, char *argv[]) {
 
 
     printf("QuickSort: %ld\n", total_time);
-    for (size_t i = 0; i < count; i++) {
-        printf("%lu\n", numbers[i]);
+    for (size_t i = 0; i < current; i++) {
+        printf("%lu\n", numbers_array[i]);
     }
     free(numbers_array);
     return 0;
