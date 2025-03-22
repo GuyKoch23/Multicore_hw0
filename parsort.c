@@ -95,11 +95,11 @@ int main(int argc, char *argv[]) {
     gettimeofday(&finish_time, NULL);
     long total_time = (finish_time.tv_sec - begin_time.tv_sec) * 1000000L + (finish_time.tv_usec - begin_time.tv_usec);
 
-    // for (size_t i = 0; i < count; i++) {
-    //     printf("%lu\n", numbers[i]);
-    // }
-    printf("QuickSort: %ld\n", total_time);
 
+    printf("QuickSort: %ld\n", total_time);
+    for (size_t i = 0; i < count; i++) {
+        printf("%lu\n", numbers[i]);
+    }
     free(numbers_array);
     return 0;
 }
