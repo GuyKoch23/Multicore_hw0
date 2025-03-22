@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+echo "Compiling parsort"
+gcc -std=c11 -O3 -Wall -Wextra -fopenmp parsort.c -o parsort
+echo "Build Finished"
